@@ -1,49 +1,129 @@
-**TransferVault (CRUD Exercise)**    
-TransferVault is a football club marketplace web application built as a CRUD exercise, allowing football fans and enthusiasts to explore, collect, and trade the world's most iconic football clubs from top leagues including the Premier League, La Liga, Bundesliga, Serie A and Ligue 1.   
+TransferVault (CRUD Exercise)
 
-**What The App Does**   
-Users can create an account and securely log in using JWT authentication. Once logged in they can browse clubs by league, view detailed information about each club including the club's history, number of titles won, current star players, estimated club worth and listed price. Users can also list their own football clubs on the platform with full validation to ensure no duplicate clubs are ever added — keeping the marketplace clean and unique.   
+TransferVault is a full-stack football club marketplace web application built as a CRUD exercise, allowing football fans and enthusiasts to explore, collect, and trade iconic football clubs from the world’s top leagues including the Premier League, La Liga, Bundesliga, Serie A, and Ligue 1.
 
-**Database**     
+Live Deployment
 
-MongoDB — NoSQL database hosted on MongoDB Atlas   
-Data is stored in collections — one for users and one for clubs  
-Clubs are organized by league making filtering fast and efficient  
-Passwords are hashed using Bcrypt before being stored   
+* Frontend (Vercel):   
+    [https://your-vercel-app.vercel.app](https://transfervault-frontend.vercel.app)    
+* Backend API (Railway):    
+    https://crud-production-7dc3.up.railway.app    
 
+⸻
 
-**Backend**  
-Language: Node.js   
-**Framework**: Express.js   
-**Deployment**: Railway   
+Features
 
-**Concepts Used:**   
+* User registration and login with JWT authentication
+* Protected routes accessible only to authenticated users
+* Browse football clubs by league
+* View detailed club information
+* Add and remove clubs from cart
+* Create and manage football club listings
+* Duplicate club validation
+* League-based filtering using query parameters
+* Secure password hashing with Bcrypt
+* RESTful API with full CRUD functionality
+* Error handling with proper HTTP status codes
 
-REST API design with full CRUD operations   
-JWT Authentication — users get a token on login to access protected routes   
-Password hashing with Bcrypt for security  
-Mongoose ODM for modeling and querying MongoDB  
-Middleware for route protection and request validation  
-Duplicate club validation — no two clubs can share the same name  
-Query params for league filtering (/clubs?league=La Liga)  
-Environment variables with dotenv for securing sensitive data  
-Cart system — users can add and remove clubs from their cart  
-Error handling with appropriate HTTP status codes (200, 201, 400, 401, 404, 500)  
+⸻
 
- 
-**Frontend**   
-**Language**: JavaScript/ TypeScript  
-**Library**: React.js/.ts  
-**Styling**: Tailwind CSS  
-**Deployment**: Vercel  
+Club Details Include
 
-**Tools & Libraries Used:**  
+* Club history
+* Number of titles won
+* Current star players
+* Estimated club worth
+* Listed market price
+* League information
 
-React Router — for page navigation between leagues, clubs and cart  
-Context API — for managing global state like auth and cart  
-JWT decode — for reading the token on the frontend   
-League images — displayed based on the club's league field from the database   
-Protected routes — pages only accessible when logged in  
+⸻
 
+Database
 
-Whether you're a die-hard fan wanting to virtually own your favorite club or an explorer wanting to discover clubs from leagues around the world — TransferVault is your home for football club ownership.  
+MongoDB Atlas
+
+TransferVault uses MongoDB Atlas as its cloud-hosted NoSQL database.
+
+Collections
+
+* Users Collection
+* Clubs Collection
+
+Security & Optimization
+
+* Passwords hashed using Bcrypt
+* Clubs organized by league for efficient filtering
+* Mongoose ODM used for schema modeling and database queries
+
+⸻
+
+Backend
+
+* Runtime: Node.js
+* Framework: Express.js
+* Database: MongoDB Atlas
+* Deployment: Railway
+
+Backend Concepts Used
+
+* REST API architecture
+* CRUD operations
+* JWT Authentication
+* Middleware route protection
+* Query parameter filtering
+* Request validation
+* Duplicate club prevention
+* Environment variables with dotenv
+* Error handling and status codes
+
+⸻
+
+Frontend
+
+* Library: React.js
+* Styling: Tailwind CSS
+* Routing: React Router
+* State Management: Context API
+* Deployment: Vercel
+
+Frontend Features
+
+* Dynamic league filtering
+* Protected pages
+* JWT token handling
+* Cart state management
+* Responsive UI design
+* League-based visuals and club rendering
+
+⸻
+
+Technologies Used
+
+Frontend
+
+* React.js
+* Tailwind CSS
+* React Router
+* Context API
+
+Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT
+* Bcrypt
+
+Deployment
+
+* Vercel
+* Railway
+
+⸻
+
+Project Goal
+
+TransferVault was built to simulate a modern football club marketplace while practicing full-stack CRUD development, authentication, API integration, deployment, state management, and secure backend architecture.
+
+Whether you’re a die-hard football fan wanting to virtually own your favorite club or simply explore legendary clubs from leagues around the world — TransferVault is your home for football club ownership.
